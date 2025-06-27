@@ -5,11 +5,12 @@ import { motion } from "motion/react"
 
 const Header = () => {
   return (
-    <div className='w-11/12 max-w-4xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4'>
+        <div className='w-full max-w-4xl text-center mx-auto min-h-screen flex flex-col items-center justify-center gap-4 px-4 pt-32'>
         <motion.div 
             initial={{scale: 0}}
             whileInView={{scale: 1}}
             transition={{duration: 0.8, type: 'spring', stiffness: 100}}
+            className="relative z-10"
         >
             <Image src={assets.profile_img} alt='' className='rounded-full w-32 lg:mt-12'/>
         </motion.div>
